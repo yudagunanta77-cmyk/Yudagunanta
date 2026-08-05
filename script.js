@@ -1,0 +1,1 @@
+const s="Yuda Gunanta";let i=0;setInterval(()=>{if(i<=s.length)document.getElementById("t").textContent=s.slice(0,i++);},120);
