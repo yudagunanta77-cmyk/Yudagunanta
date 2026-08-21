@@ -1,1 +1,1 @@
-const menu=document.getElementById("menu");const sidebar=document.querySelector(".sidebar");if(menu&&sidebar){menu.addEventListener("click",()=>{sidebar.style.display=sidebar.style.display==="block"?"none":"block";sidebar.style.position="fixed";sidebar.style.width="240px";sidebar.style.background="#050505";});}
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");if(menu)menu.onclick=()=>nav.classList.toggle("open");document.querySelectorAll("nav a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
